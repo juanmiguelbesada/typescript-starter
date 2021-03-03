@@ -2,19 +2,6 @@
   "name": "typescript-starter",
   "version": "1.0.0-dev",
   "description": "Typescript skeleton for building your libraries or projects. Includes eslint, prettier and jest",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "tsc",
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/juanmiguelbesada/typescript-starter.git"
-  },
   "keywords": [
     "template",
     "skeleton",
@@ -25,13 +12,30 @@
     "bootstrap",
     "scaffold"
   ],
-  "author": "Juan Miguel Besada <juanmiguelbesada@gmail.com>",
+  "author": "Juan Miguel Besada <https://twiter.com/juanmibesada>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/juanmiguelbesada/typescript-starter/issues"
-  },
   "homepage": "https://github.com/juanmiguelbesada/typescript-starter#readme",
+  "repository": "github:juanmiguelbesada/typescript-starter",
+  "bugs": "https://github.com/juanmiguelbesada/typescript-starter/issues",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier .",
+    "format:fix": "npm run format -- --write",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "jest"
+  },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "prettier": "^2.2.1",
     "typescript": "^4.2.2"
   }
 }
