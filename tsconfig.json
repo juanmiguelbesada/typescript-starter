@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "target": "es6",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "removeComments": true,
+    "declaration": true
+  },
+  "include": [
+    "src/**/**.ts"
+  ]
+}
