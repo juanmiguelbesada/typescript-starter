@@ -1,22 +1,8 @@
 {
   "name": "typescript-starter",
-  "version": "1.0.0-dev",
-  "description": "Typescript skeleton for building your libraries or projects. Includes eslint, prettier and jest",
-  "keywords": [
-    "template",
-    "skeleton",
-    "typescript",
-    "eslint",
-    "prettier",
-    "jest",
-    "bootstrap",
-    "scaffold"
-  ],
-  "author": "Juan Miguel Besada <https://twiter.com/juanmibesada>",
-  "license": "MIT",
-  "homepage": "https://github.com/juanmiguelbesada/typescript-starter#readme",
-  "repository": "github:juanmiguelbesada/typescript-starter",
-  "bugs": "https://github.com/juanmiguelbesada/typescript-starter/issues",
+  "version": "0.0.1-dev",
+  "license": "UNLICENSED",
+  "private": true,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
