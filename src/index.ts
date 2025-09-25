@@ -5,7 +5,7 @@
  * @returns The greeting string
  */
 const greetings = (name = "world"): string => {
-    return `Hello ${name}`;
+	return `Hello ${name}`;
 };
 
 export default greetings;

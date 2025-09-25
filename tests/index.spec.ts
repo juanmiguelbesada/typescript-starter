@@ -1,7 +1,8 @@
-import hello from '../src';
+import { describe, expect, it } from "vitest";
+import hello from "../src";
 
-describe('Hello', () => {
-    it('should return hello word', () => {
-        expect(hello("world")).toBe('Hello world');
-    });
+describe("Hello", () => {
+	it("should return hello word", () => {
+		expect(hello("world")).toBe("Hello world");
+	});
 });
