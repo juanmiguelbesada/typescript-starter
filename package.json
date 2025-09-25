@@ -1,31 +1,31 @@
 {
-  "name": "typescript-starter",
-  "version": "0.0.1-dev",
-  "license": "UNLICENSED",
-  "private": true,
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "tsc",
-    "format": "prettier .",
-    "format:fix": "npm run format -- --write",
-    "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix",
-    "test": "jest",
-    "test:watch": "npm test -- --watch"
-  },
-  "devDependencies": {
-    "@types/jest": "^26.0.20",
-    "@typescript-eslint/eslint-plugin": "^4.16.1",
-    "@typescript-eslint/parser": "^4.16.1",
-    "eslint": "^7.21.0",
-    "eslint-config-prettier": "^8.1.0",
-    "jest": "^26.6.3",
-    "prettier": "^2.2.1",
-    "ts-jest": "^26.5.2",
-    "typescript": "^4.2.2"
-  }
+	"name": "typescript-starter",
+	"version": "0.0.1-dev",
+	"license": "UNLICENSED",
+	"private": true,
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsc",
+		"dev": "tsc --watch",
+		"lint": "biome check",
+		"lint:fix": "biome check --write",
+		"test": "vitest",
+		"prepare": "husky"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.2.4",
+		"husky": "^9.1.7",
+		"lint-staged": "^16.2.0",
+		"typescript": "^5.9.2",
+		"vitest": "^3.2.4"
+	},
+	"lint-staged": {
+		"*": [
+			"biome check --no-errors-on-unmatched --files-ignore-unknown=true"
+		]
+	}
 }
