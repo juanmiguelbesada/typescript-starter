@@ -4,7 +4,7 @@ Template repository to build a awesome typescript package (or project).
 
 ## Getting Started
 This package come with some nice defaults to help scaffolding your library/app quickly and easy.
-This includes `eslint` for linting, `prettier` for formatting and `jest` for testing. Everything preconfigured and ready to use.
+This includes `biome` for linting and formatting and `vitest` for testing. Everything preconfigured and ready to use.
 
 To start using this repo, clone it, remote the `.git` directory and create a new git repo
 ```shell
