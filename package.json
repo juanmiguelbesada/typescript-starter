@@ -5,6 +5,10 @@
 	"private": true,
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
+	"imports": {
+		"#/*": "./src/*",
+		"#tests/*": "./tests/*"
+	},
 	"files": [
 		"dist"
 	],
