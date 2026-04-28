@@ -1,8 +1,0 @@
-import { describe, expect, it } from "vitest";
-import hello from "#/index";
-
-describe("Hello", () => {
-	it("should return hello word", () => {
-		expect(hello("world")).toBe("Hello world");
-	});
-});
