@@ -11,8 +11,8 @@
 		"noUncheckedIndexedAccess": true,
 		"noImplicitOverride": true,
 
-		"module": "Preserve",
-		"moduleResolution": "Bundler",
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
 		"noEmit": true
 	},
 	"include": ["src", "tests"],
