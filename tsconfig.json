@@ -11,13 +11,10 @@
 		"noUncheckedIndexedAccess": true,
 		"noImplicitOverride": true,
 
-		"module": "NodeNext",
-		"rootDir": "src",
-		"outDir": "dist",
-		"sourceMap": true,
-
-		"declaration": true
+		"module": "Preserve",
+		"moduleResolution": "Bundler",
+		"noEmit": true
 	},
-	"include": ["src"],
+	"include": ["src", "tests"],
 	"exclude": ["node_modules"]
 }
