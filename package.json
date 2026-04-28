@@ -5,11 +5,16 @@
 	"private": true,
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
+	"imports": {
+		"#/": "./src/index.ts",
+		"#/*": "./src/*",
+		"#tests/*": "./tests/*"
+	},
 	"files": [
 		"dist"
 	],
 	"scripts": {
-		"build": "tsc",
+		"build": "tsc -p tsconfig.build.json",
 		"lint": "biome check",
 		"lint:fix": "biome check --write",
 		"test": "vitest",

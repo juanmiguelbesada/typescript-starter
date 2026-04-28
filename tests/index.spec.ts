@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import hello from "../src";
+import hello from "#/";
 
 describe("Hello", () => {
 	it("should return hello word", () => {

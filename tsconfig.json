@@ -12,12 +12,9 @@
 		"noImplicitOverride": true,
 
 		"module": "NodeNext",
-		"rootDir": "src",
-		"outDir": "dist",
-		"sourceMap": true,
-
-		"declaration": true
+		"moduleResolution": "NodeNext",
+		"noEmit": true
 	},
-	"include": ["src"],
+	"include": ["src", "tests"],
 	"exclude": ["node_modules"]
 }
